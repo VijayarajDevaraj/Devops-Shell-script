@@ -1,0 +1,6 @@
+#!/bin/bash
+echo Enter file name
+read name
+a=$name
+ find / -type f -name $a
+
