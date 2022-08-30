@@ -1,0 +1,14 @@
+#!/bin/bash
+echo Enter file name to print file details
+read name
+a=$name  
+echo "no of words are " 
+  wc -c $a
+echo "no of counts in bytes "
+  wc -c $a
+echo "no of characters are "
+  wc -m $a
+echo "length of longest line  file is "
+ wc -L $a
+echo "file content is "
+  cat $a
