@@ -1,0 +1,21 @@
+#!/bin/bash
+echo "which details do you want Name or Memory or CPU or Disk"
+read name 
+a=$name 
+if [ $a == Name ]
+then 
+     whoami
+elif [ $a == Memory ]
+then	
+      cat /proc/meminfo
+elif [ $a == CPU ]
+then 
+      cat /proc/cpuinfo
+elif [ $a == Disk ]
+then 
+     df	
+else 
+     echo Seems you requested different info	
+fi
+
+
